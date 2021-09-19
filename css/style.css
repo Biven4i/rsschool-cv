@@ -959,7 +959,7 @@ body {
     }
 
     .hljs {
-        font-size: 15px;
+        white-space: pre-wrap;
     }
 }
 
@@ -1087,7 +1087,7 @@ body {
     }
 
     .hljs {
-        font-size: 10px;
+        white-space: pre-wrap;
     }
     
 }
