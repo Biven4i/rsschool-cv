@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML, CSS & Git Basics</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+        <div class="header-wrap">
+            <header class="menu">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a class="nav-list-link js-scroll" href="#contacts">Contacts</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link js-scroll" href="#summary">Summary</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link js-scroll" href="#code-example">Code example</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link js-scroll" href="#experience">Experience</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link js-scroll" href="#projects">Projects</a></li>
+                    </ul>
+                </nav>
+
+                <div class="burger-close">
+                    <span class="burger-close-line"></span>
+                    <span class="burger-close-line"></span>
+                </div>
+            </header>
+        </div>
+
+        <main class="main">
+            <div class="main-wrap">        
+                <div class="block-left">
+                    <div class="burger">
+                        <span class="burger-line burger-line-first"></span>
+                        <span class="burger-line burger-line-second"></span>
+                        <span class="burger-line burger-line-third"></span>
+                    </div>
+                    <section class="intro">
+                        <figure class="intro-pic">
+                            <img class="intro-pic-img" src="img/photo.png" alt="photo">
+                        </figure>
+
+                        <h1 class="intro-title">
+                            <span class="surname">Bivenis</span>
+                            <span class="name">Bogdan</span>
+                            <span class="position">Novice Front-end developer</span>
+                        </h1>
+                    </section>
+                    <div class="contacts" id="contacts">
+                        <ul class="contacts-list">
+                            <li class="contacts-list-item">
+                                <img class="list-ico" src="img/icon/discord.png" alt="discord">
+                                <span class="contacts-link">biven4i#2506</span>
+                            </li>
+                            <li class="contacts-list-item">
+                                <a class="contacts-link-img" href="https://t.me/Biven4i_Bo"><img class="list-ico" src="img/icon/telegram.png" alt="telegram"></a>
+                                <a class="contacts-link" href="https://t.me/Biven4i_Bo">@Biven4i_Bo</a>
+                            </li>
+                            <li class="contacts-list-item">
+                                <a class="contacts-link-img" href="mailto:biven4i.en@gmail.com"><img class="list-ico" src="img/icon/email.png" alt="email"></a>
+                                <a class="contacts-link" href="mailto:biven4i.en@gmail.com">biven4i.en@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <section class="skills">
+                        <h3 class="skills-title">Skills</h3>
+                        <ul class="skills-list">
+                            <li class="skills-item">HTML&CSS</li>
+                            <li class="skills-item">JavaScript</li>
+                            <li class="skills-item">Shell</li>
+                            <li class="skills-item">Figma</li>
+                        </ul>
+                    </section>
+                    <section class="education">
+                        <h3 class="education-title">Education</h3>
+                        <ul class="education-list">
+                            <li class="education-item">Vocational education</li>
+                        </ul>
+                    </section>
+                    <section class="courses">
+                        <h3 class="courses-title">Courses</h3>
+                        <ul class="courses-list">
+                            <li class="courses-list-item">HTML and CSS Tutorials on the w3schools</li>
+                            <li class="courses-list-item"><a class="courses-list-link" href="https://www.freecodecamp.org/certification/biven4i/responsive-web-design">freeCodeCamp Responsive Web Design</a></li>
+                            <li class="courses-list-item"><a class="courses-list-link" href="https://learn.javascript.ru/">learn.javascript.ru</a></li>
+                        </ul>
+                    </section>
+                    <section class="languages">
+                        <h3 class="languages-title">Languages</h3>
+                        <ul class="languages-list">
+                            <li class="languages-item">English level - A1</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="block-right">
+                    <section class="summary" id="summary">
+                        <div class="summary-heading">
+                            <h2 class="summary-heading-title heading-title">Summary</h2>
+                            <div class="summary-heading-line heading-line"></div>
+                        </div>
+                        <p class="summary-text">I am currently working in a factory after college.
+                        I want to get development experience and I always like to learn something new for extending my knowledges.
+                        It’s easy for me to contact with new people. Also I can say that I’m easily trained.
+                        My main goal is to gain new knowledge and skills in order to change job :).</p>
+                    </section>
+                    <section class="code" id="code-example">
+                        <div class="code-heading">
+                            <h2 class="code-heading-title heading-title">Code example</h2>
+                            <div class="code-heading-line heading-line"></div>
+                        </div>
+                        <h3 class="code-task-title">RGB To Hex Conversion:</h3>
+                        <div class="code-text">
+                            <pre>
+                                <code class="javascript">
+                                    function rgb(...args) {
+                                        return args.map(item => {
+                                          if(item.toString("16").length &lt; 2) {
+                                            return 0 + item.toString("16").toUpperCase();
+                                          }
+                                          if(item > 255) {
+                                            return "FF";
+                                          }
+                                          if(item &lt;= 0) {
+                                            return "00";
+                                          }
+                                      
+                                          return item.toString("16").toUpperCase();
+                                        }).join("");
+                                      }
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
+                    <section class="experience" id="experience">
+                        <div class="experience-heading">
+                            <h2 class="experience-heading-title heading-title">Work experience</h2>
+                            <div class="experience-heading-line heading-line"></div>
+                        </div>
+                        <p class="experience-text">Nothing yet.</p>
+                        <p class="experience-text">But hopefully this will change soon :)</p>
+                    </section>
+                    <section class="projects" id="projects">
+                        <div class="projects-heading">
+                            <h2 class="projects-heading-title heading-title">My projects</h2>
+                            <div class="projects-heading-line heading-line"></div>
+                        </div>
+                        <div class="projects-wrap">
+                            <div class="projects-figure-wrap">
+                                <a class="projects-link" href="https://codepen.io/biven4i/full/JjRMyOW" target="_blank">
+                                    <figure class="projects-figure">
+                                        <img class="projects-img" src="img/projects-img/norman.jpg" alt="my-project">
+                                        <figcaption class="projects-caption"><span class="brackets">&lt;</span>Tribute Page<span class="brackets">/></span></figcaption>
+                                    </figure>
+                                </a>
+                                <div class="projects-desc-wrap">
+                                    <h3 class="projects-title">Tribute Page</h3>
+                                    <p class="projects-descp">A tribute page for Dr. Norman borlaug</p>
+                                    <h4 class="projects-list-title">List of technologies used</h4>
+                                    <ul class="projects-descp-list">
+                                        <li class="projects-list-item">HTML</li>
+                                        <li class="projects-list-item">CSS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="projects-figure-wrap">
+                                <a class="projects-link" href="https://codepen.io/biven4i/full/wvzNXjv" target="_blank">
+                                    <figure class="projects-figure">
+                                        <img class="projects-img" src="img/projects-img/form.jpg" alt="my-project">
+                                        <figcaption class="projects-caption"><span class="brackets">&lt;</span>Survey form<span class="brackets">/></span></figcaption>
+                                    </figure>
+                                </a>
+                                <div class="projects-desc-wrap">
+                                    <h3 class="projects-title">Survey form</h3>
+                                    <p class="projects-descp">Survey form for freeCodeCamp</p>
+                                    <h4 class="projects-list-title">List of technologies used</h4>
+                                    <ul class="projects-descp-list">
+                                        <li class="projects-list-item">HTML</li>
+                                        <li class="projects-list-item">CSS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="projects-figure-wrap">
+                                <a class="projects-link" href="https://codepen.io/biven4i/full/NWRoKjq" target="_blank">
+                                    <figure class="projects-figure">
+                                        <img class="projects-img" src="img/projects-img/landing.jpg" alt="my-project">
+                                        <figcaption class="projects-caption"><span class="brackets">&lt;</span>Landing page<span class="brackets">/></span></figcaption>
+                                    </figure>
+                                </a>
+                                <div class="projects-desc-wrap">
+                                    <h3 class="projects-title">Landing page</h3>
+                                    <p class="projects-descp">Trombone store landing page</p>
+                                    <h4 class="projects-list-title">List of technologies used</h4>
+                                    <ul class="projects-descp-list">
+                                        <li class="projects-list-item">HTML</li>
+                                        <li class="projects-list-item">CSS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="projects-figure-wrap">
+                                <a class="projects-link" href="https://codepen.io/biven4i/full/KKNMpPB" target="_blank">
+                                    <figure class="projects-figure">
+                                        <img class="projects-img" src="img/projects-img/doc.jpg" alt="my-project">
+                                        <figcaption class="projects-caption"><span class="brackets">&lt;</span>Technical documentation<span class="brackets">/></span></figcaption>
+                                    </figure>
+                                </a>
+                                <div class="projects-desc-wrap">
+                                    <h3 class="projects-title">Technical documentation page</h3>
+                                    <p class="projects-descp">JavaScript technical docs page</p>
+                                    <h4 class="projects-list-title">List of technologies used</h4>
+                                    <ul class="projects-descp-list">
+                                        <li class="projects-list-item">HTML</li>
+                                        <li class="projects-list-item">CSS</li>
+                                    </ul>
+                                </div>
+                            </div>     
+                        </div>
+                    </section>
+                    <footer class="footer">
+                        <a href="https://github.com/Biven4i"><img class="footer-ico" src="img/icon/github.png" alt="github"></a>
+                        <span class="year">2021</span>
+                        <a href="https://rs.school/js/"><img class="footer-ico" src="img/icon/rs_school_js.svg" alt="rsschool"></a>
+                    </footer>
+                </div>
+            </div>
+        </main>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
