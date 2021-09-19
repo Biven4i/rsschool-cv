@@ -3,11 +3,10 @@
 ### Contacts:
 - **Discord:** biven4i#2506
 - **Telegram:** @Biven4i_Bo
-- **Phone:** +375292570732
 - **Email:** biven4i.en@gmail.com
 
 ### About myself:
-I am currently working in a factory after college. I want to get development experience and I always like to learn something new for extending my knowledges. It’s easy for me to contact with new people. Also I can say that I’m easily trained.My main goal is to gain new knowledge and skills in order to change job :).
+I am currently working in a factory after college. I want to get development experience and I always like to learn something new for extending my knowledges. It’s easy for me to contact with new people. Also I can say that I’m easily trained. My main goal is to gain new knowledge and skills in order to change job :).
 
 ### My skills:
 - **HTML&CSS**
@@ -36,3 +35,17 @@ function rgb(...args) {
   }).join("");
 }
 ```
+
+### Work experience:
+
+Nothing yet
+
+But hopefully this will change soon :)
+
+### Education and courses:
+- **HTML and CSS Tutorials on the w3schools**
+- [**freeCodeCamp Responsive Web Design**](https://www.freecodecamp.org/certification/biven4i/responsive-web-design)
+- **LearnJavaScript:** https://learn.javascript.ru/
+
+### Language:
+English level - A1
